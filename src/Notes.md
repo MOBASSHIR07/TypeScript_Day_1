@@ -46,7 +46,7 @@ Q4: Can you assign null to a number variable?
 A: Only if "strictNullChecks" is disabled in tsconfig.json.
 
 
-🟡 2️⃣ Arrays and Tuples
+#🟡 2️⃣ Arrays and Tuples
 ✅ Arrays
 let items: string[] = ['milk', 'egg'];
 let numbers: Array<number> = [1, 2, 3];
@@ -71,7 +71,7 @@ A: Arrays can hold values of the same type and have flexible length, while tuple
 Q2: Can a tuple be extended?
 A: Technically yes (with push), but it breaks type safety, so it’s not recommended.
 
-🟣 3️⃣ Object Types, Optional, Readonly, and Literal Types
+#🟣 3️⃣ Object Types, Optional, Readonly, and Literal Types
 ✅ Object Example
 const user: {
   organization: 'My own'; // literal type
@@ -110,7 +110,7 @@ const → used on variables.
 Q3: What’s an optional property?
 A: A property marked with ? that may or may not exist in the object.
 
-🔵 4️⃣ Functions
+#🔵 4️⃣ Functions
 ✅ Regular Function
 function add(a: number, b: number): number {
   return a + b;
@@ -146,7 +146,7 @@ A: Arrow functions don’t have their own this, while normal functions do.
 Q3: Why define return types?
 A: It helps TypeScript catch type errors during compile time.
 
-🟢 5️⃣ Destructuring
+#🟢 5️⃣ Destructuring
 ✅ Object Destructuring
 const user = {
   id: 123,
@@ -178,7 +178,7 @@ A: Yes, e.g. const { name: firstName } = user;.
 Q3: What happens if property doesn’t exist?
 A: It becomes undefined.
 
-🔴 6️⃣ Nullable, Unknown, and Never Types
+#🔴 6️⃣ Nullable, Unknown, and Never Types
 ✅ Nullable Example
 const getUser = (input: string | null) => {
   if (input) {
@@ -221,7 +221,7 @@ void → function executes but returns nothing.
 
 never → function never completes execution.
 
-🟠 7️⃣ Conditional Operators
+#🟠 7️⃣ Conditional Operators
 ✅ Ternary Operator
 const biyerJonnoEligible = (age: number): string => {
   const result = age >= 21 ? "eligible" : "not eligible";
@@ -252,7 +252,7 @@ A: || checks falsy values (like 0, "", null, undefined),
 Q2: When to use optional chaining (?.)?
 A: When accessing deeply nested properties that might not exist.
 
-🟤 8️⃣ Spread and Rest Operator
+#🟤 8️⃣ Spread and Rest Operator
 ✅ Spread Operator (Array)
 const friends = ['Rahim', 'Karim'];
 const schoolFriends = ['Pintu', 'Cintu'];
@@ -281,7 +281,7 @@ Rest: collects arguments into an array.
 Q2: Can we use rest in object destructuring?
 A: Yes, to collect remaining properties.
 
-🟣 9️⃣ Type Alias
+#🟣 9️⃣ Type Alias
 ✅ Example
 type User = {
   id: number;
